@@ -20,7 +20,9 @@
     }
     
     function notifyUser() {
-        alert("buy!");
+        var audio = new Audio('http://soundbible.com/mp3/Air%20Horn-SoundBible.com-964603082.mp3');
+        audio.play();
+        audio.addEventListener("ended", function () { alert("buy!"); }, false);
     }
     
     function waitAndReloadPage() {
